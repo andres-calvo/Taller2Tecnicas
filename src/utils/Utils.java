@@ -24,8 +24,8 @@ public class Utils {
         in.close();
         return letter;
     }
-    public int readInt(){
-        System.out.println("Entra el valor de n: ");
+    public int readInt(String text){
+        System.out.println(text);
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         in.close();

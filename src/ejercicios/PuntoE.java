@@ -7,7 +7,7 @@ public class PuntoE {
     public static void main(String[] args) throws Exception {
         Utils utils = new Utils();
         int resultado=0;
-        int n = utils.readInt();
+        int n = utils.readInt("Entra un valor para n : ");
         for (int i = -2; i <= n; i++) {
             resultado+= 7*i - 3;
         }
