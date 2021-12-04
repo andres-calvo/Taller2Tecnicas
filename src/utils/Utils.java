@@ -1,5 +1,6 @@
 package utils;
 
+import java.util.Scanner;
 import java.util.Random;
 
 public class Utils {
@@ -14,5 +15,13 @@ public class Utils {
             array[i] = randNum.nextInt();
         }
         return array;
+    }
+
+    public char readChar() {
+        System.out.println("Entra una letra: ");
+        Scanner in = new Scanner(System.in);
+        char letter = in.next().charAt(0);
+        in.close();
+        return letter;
     }
 }
