@@ -17,6 +17,10 @@ public class PuntoM {
         if(a < b){
             throw new Exception("a debe ser mayor que b");
         }
+        //Como b es menor que a, y estamos buscando el maximo comun divisor, dicho divisor debe ser menor o igual a b,
+        // Ya que si es mayor a b, dejaria de ser comun entre los dos numeros. 
+        //Por ello nos interesan los numeros positivos mayores a cero y menores o iguales a b.
+        
         while(b>0){
           
             if(a>b){
